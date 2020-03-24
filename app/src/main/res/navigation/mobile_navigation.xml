@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/popular">
+
+    <fragment
+        android:id="@+id/popular"
+        android:name="com.example.moviesflix2.view.fragment.ui.popular.PopularFragment"
+        android:label="popular movies"
+        tools:layout="@layout/popular" />
+
+    <fragment
+        android:id="@+id/current"
+        android:name="com.example.moviesflix2.view.fragment.ui.current.CurrentMoviesFragment"
+        android:label="current movies"
+        tools:layout="@layout/current" />
+
+    <fragment
+        android:id="@+id/toprated"
+        android:name="com.example.moviesflix2.view.fragment.ui.toprated.TopratedFragment"
+        android:label="top rated movies"
+        tools:layout="@layout/toprated" />
+
+    <fragment
+        android:id="@+id/upcoming"
+        android:name="com.example.moviesflix2.view.fragment.ui.upcoming.UpcomingFragment"
+        android:label="upcoming movies"
+        tools:layout="@layout/upcoming" />
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.moviesflix2.view.fragment.ui.search.SearchFragment"
+        android:label="search"
+        tools:layout="@layout/search" />
+
+
+</navigation>
